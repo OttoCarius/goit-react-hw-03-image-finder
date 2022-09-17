@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledSearch = styled.header`
+  margin-bottom: 50px;
   top: 0;
   left: 0;
   position: sticky;
@@ -13,10 +14,10 @@ export const StyledSearch = styled.header`
   padding-left: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
-  color: #fff;
-  background-color: #3f51b5;
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+  background-color: #33ffff;
+  box-shadow: 0 0 20px #33ffff, 0 0 30px #33ffff, 0 0 25px #33ffff,
+    0 0 55px #33ffff, 0 0 75px #33ffff;
 `;
 
 export const StyledForm = styled.form`
@@ -24,9 +25,17 @@ export const StyledForm = styled.form`
   align-items: center;
   width: 100%;
   max-width: 600px;
-  background-color: #fff;
   border-radius: 3px;
   overflow: hidden;
+  color: #333333;
+  border-radius: 20px;
+  background: #ffffff;
+  -webkit-box-shadow: -9px 5px 15px 5px #ffe488, -7px -5px 15px 5px #8cff85,
+    12px -5px 15px 5px #80c7ff, 12px 10px 15px 7px #e488ff,
+    -10px -7px 27px 1px #8e5cff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: -9px 5px 15px 5px #ffe488, -7px -5px 15px 5px #8cff85,
+    12px -5px 15px 5px #80c7ff, 12px 10px 15px 7px #e488ff,
+    -10px -7px 27px 1px #8e5cff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 `;
 
 export const StyledButton = styled.button`
@@ -34,7 +43,7 @@ export const StyledButton = styled.button`
   width: 48px;
   height: 48px;
   border: 0;
-  background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
+  /* background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg'); */
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
@@ -43,7 +52,7 @@ export const StyledButton = styled.button`
   cursor: pointer;
   outline: none;
   :hover {
-    opacity: 1;
+    background-color: #99ffff;
   }
 `;
 

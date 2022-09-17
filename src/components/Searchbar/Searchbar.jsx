@@ -8,6 +8,10 @@ import {
   StyledInput,
 } from './Searchbar.styled';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { BsSearch } from 'react-icons/bs';
+
 class Searchbar extends Component {
   state = { value: '' };
 
@@ -18,7 +22,7 @@ class Searchbar extends Component {
   onHandleSubmit = e => {
     e.preventDefault();
     if (this.state.value.trim() === '') {
-      alert('Введите данные для поиска');
+      toast.error('Введите данные для поиска');
       return;
     }
     const { onSubmit } = this.props;
@@ -29,11 +33,12 @@ class Searchbar extends Component {
   render() {
     return (
       <StyledSearch>
+        <ToastContainer />
         <StyledForm onSubmit={this.onHandleSubmit}>
           <StyledButton type="submit">
-            <StyledLabel>Search</StyledLabel>
+            <BsSearch size="20px" color="#003322" />
+            <StyledLabel> Search</StyledLabel>
           </StyledButton>
-
           <StyledInput
             type="text"
             name="search"
