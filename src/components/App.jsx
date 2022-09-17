@@ -9,7 +9,6 @@ import ImageGalleryItem from './ImageGalleryItem/ImageGalleryItem';
 import Message from './Message/Message.jsx';
 import Modal from './Modal/Modal';
 import SearchBar from './Searchbar/Searchbar';
-import { BsArrowRightShort } from 'react-icons/bs';
 
 class App extends Component {
   state = {
