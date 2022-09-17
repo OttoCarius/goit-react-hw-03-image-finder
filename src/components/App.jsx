@@ -46,16 +46,6 @@ class App extends Component {
       .catch(error => console.log(error));
   };
 
-  // onLoadMore = () => {
-  //   this.setState(prevState => ({
-  //     status: 'pending',
-  //     page: (prevState.page += 1),
-  //   }));
-  //   pixFetch(this.state.searchQuery, this.state.page)
-  //     .then(data => this.onHandleData(data.hits))
-  //     .catch(error => console.log(error));
-  // };
-
   onHandleData = data => {
     this.setState(prevState =>
       prevState.searchQuery !== this.state.searchQuery
