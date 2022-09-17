@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import pixFetch from '../services/PixabayApi';
 import { Circles } from 'react-loader-spinner';
 
-// import Box from './Box/Box'
 import Button from './Button/Button';
 import ImageGallery from './ImageGallery/ImageGallery';
 import ImageGalleryItem from './ImageGalleryItem/ImageGalleryItem';
