@@ -39,7 +39,7 @@ class App extends Component {
       status: 'pending',
       page: (prevState.page += 1),
     }));
-    pixFetch(this.state.searchQuery, this.state.page)
+    pixFetch(this.state.searchQuery, this.state.page + 1)
       .then(data => this.onHandleData(data.hits))
       .catch(error => console.log(error));
   };
